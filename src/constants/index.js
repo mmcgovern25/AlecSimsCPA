@@ -36,8 +36,6 @@ import {
   yourlogo,
 } from "../assets";
 
-// Example of how to define and export named icons in the "../assets" module
-
 
 
 export const navigation = [
