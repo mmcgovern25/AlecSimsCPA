@@ -1,10 +1,8 @@
-import Section from "./Section";
 import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
-  Gradient,
   VideoChatMessage,
 } from "./design/Services";
 
@@ -12,12 +10,13 @@ import Generating from "./Generating";
 
 const Services = () => {
   return (
-    <Section id="how-to-use">
+    <section id="how-to-use">
       <div className="container">
         <Heading
           title="Generative AI made for creators."
           text="Brainwave unlocks the potential of AI-powered applications"
         />
+
 
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
@@ -64,6 +63,7 @@ const Services = () => {
                 />
               </div>
 
+
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Photo editing</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
@@ -107,7 +107,9 @@ const Services = () => {
                 </ul>
               </div>
 
+
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
+
                 <img
                   src={service3}
                   className="w-full h-full object-cover"
@@ -116,15 +118,18 @@ const Services = () => {
                   alt="Scary robot"
                 />
 
+
                 <VideoChatMessage />
+
               </div>
             </div>
           </div>
 
-          <Gradient />
+
+
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

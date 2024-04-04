@@ -86,3 +86,24 @@
 .-rotate-360 {
   @apply rotate-[-360deg];
 }
+
+.basic__gradient {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  /* Use white (#ffffff) as the end color */
+  filter: blur(123px); /* Optionally, keep the blur effect */
+  background-position: center; /* Center the background vertically and horizontally */
+  background-size: cover; /* Ensure the gradient covers the entire container */
+}
+
+
+
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ffec7c 100%);
+  filter: blur(123px);
+}

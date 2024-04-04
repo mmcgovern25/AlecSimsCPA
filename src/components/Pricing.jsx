@@ -1,11 +1,10 @@
-import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 
 
 const Pricing = () => {
   return (
-    <Section className="overflow-hidden" id="pricing">
+    <section className="overflow-hidden" id="pricing">
 
       <div className="container relative z-2 flex justify-center items-center flex-col"> {/* Added flex and centering classes */}
 <Heading
@@ -37,7 +36,7 @@ const Pricing = () => {
 
       </div>
       </div>
-    </Section>
+    </section>
   )
 }
 
