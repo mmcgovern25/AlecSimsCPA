@@ -107,3 +107,13 @@
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ffec7c 100%);
   filter: blur(123px);
 }
+.bg-iconic-gradient {
+  background-image: conic-gradient(
+    from 225deg,
+    #f0f0f0, /* Light gray */
+    #d8d8d8, /* Medium light gray */
+    #b0b0b0, /* Medium gray */
+    #888888, /* Dark gray */
+    #606060  /* Very dark gray */
+  );
+}
