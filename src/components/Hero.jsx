@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       className='pt-[12rem] -mt-[5.25rem]'
-      id="hero"
+      id="Home"
     >
 
       <div className='container relative' ref={parallaxRef}>

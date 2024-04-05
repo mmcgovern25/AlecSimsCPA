@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 const Pricing = () => {
   return (
-    <section className="overflow-hidden" id="pricing">
+    <section className="overflow-hidden" id="FAQs">
 
       <div className="container relative z-2 flex justify-center items-center flex-col"> {/* Added flex and centering classes */}
 <Heading

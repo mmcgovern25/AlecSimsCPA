@@ -1,11 +1,10 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent, collabText } from "../constants";
+import { check } from "../assets";
+import { collabContent, collabText } from "../constants";
 import Button from "./Button";
-import { LeftCurve, RightCurve } from "./design/Collaboration";
 
 const Collaboration = () => {
   return (
-    <section>
+    <section id="About">
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
