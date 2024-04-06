@@ -3,6 +3,7 @@ import Heading from "./Heading";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import Button from './Button';
 
 const Benefits = () => {
   return (
@@ -13,10 +14,10 @@ const Benefits = () => {
           title="Chat Smarter, Not Harder with Brainwave"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="flex flex-wrap gap-3 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[20rem]"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}
@@ -59,9 +60,11 @@ const Benefits = () => {
               </div>
 
               <ClipPath />
+
             </div>
           ))}
         </div>
+        <Button>Get Started</Button>
       </div>
     </section>
   );

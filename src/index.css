@@ -13,6 +13,20 @@
   color-scheme: dark;
 }
 
+/* CSS */
+
+
+::-webkit-scrollbar-track {
+  background: hsl(120 75% 50% / 1);
+  border-radius: 100vh;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(120 100% 10% / 1);
+}
+
+
 * {
   scroll-behavior: smooth;
 }
@@ -116,4 +130,8 @@
     #888888, /* Dark gray */
     #606060  /* Very dark gray */
   );
+}
+
+.logo-text {
+  font-family: 'Oswald', sans-serif;
 }

@@ -2,6 +2,7 @@ import { check } from "../assets";
 import { collabContent, collabText } from "../constants";
 import Button from "./Button";
 
+
 const Collaboration = () => {
   return (
     <section id="About">
@@ -25,7 +26,7 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <Button>Try it now</Button>
+          <Button>Get Started</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">

@@ -2,6 +2,8 @@ import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 
 
+
+
 const Pricing = () => {
   return (
     <section className="overflow-hidden" id="FAQs">
