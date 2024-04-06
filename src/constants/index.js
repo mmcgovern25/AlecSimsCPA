@@ -38,7 +38,10 @@ import {
   sas,
   finance,
   tax,
-  bookkeeping
+  bookkeeping,
+  bookkepingIcon,
+  financeIcon,
+  taxIcon,
 } from "../assets";
 
 
@@ -246,28 +249,31 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Basic Book Keeping",
+    text: `• Maintenance of accurate and up-to-date financial records
+    • Reconciliation of bank statements
+    • Accounts receivable and accounts payable
+    • Assessing a company’s cash flow`,
     backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: bookkepingIcon,
     imageUrl: bookkeeping,
-    light: true,
+    light: true
   },
   {
     id: "1",
-    title: "Improve everyday",
+    title: "Tax Planning and Strategy",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: taxIcon,
     imageUrl: tax,
     light: true,
   },
   {
     id: "2",
-    title: "Connect everywhere",
+    title: "Preparation of Financials",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
     backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+    iconUrl: financeIcon,
     imageUrl: finance,
     light: true,
   },
