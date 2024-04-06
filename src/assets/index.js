@@ -73,6 +73,9 @@ import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
 import benefitImage2 from "./benefits/image-2.png";
+import finance from "./benefits/finance2.webp";
+import tax from "./benefits/tax.jpg";
+import bookkeeping from "./benefits/bookkeeping.webp";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -153,5 +156,8 @@ export {
   pwc,
   bluebird,
   cpa,
-  sas
+  sas,
+  finance,
+  tax,
+  bookkeeping
 };
