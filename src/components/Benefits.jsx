@@ -23,10 +23,17 @@ const Benefits = () => {
               }}
               key={item.id}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+    <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
   <h5 className="h5 mb-5">{item.title}</h5>
   {/* Render the text with line breaks */}
-  <div className="text-n-3 body-2 mb-6" dangerouslySetInnerHTML={{__html: item.text.replace(/\n/g, '<br>')}} />
+  <div className="text-n-3 body-3 mb-6">
+    {item.text.split('\n').map((point, index) => (
+      <div key={index} > {/* Apply smaller margin */}
+        {index > 0 && <br />} {/* Add line break if not the first item */}
+        {point.trim()} {/* Trim whitespace from the point */}
+      </div>
+    ))}
+  </div>
   <div className="flex items-center mt-auto">
     <img
       src={item.iconUrl}
@@ -41,6 +48,8 @@ const Benefits = () => {
     <Arrow />
   </div>
 </div>
+
+
 
 
               {item.light && <GradientLight />}

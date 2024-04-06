@@ -250,10 +250,10 @@ export const benefits = [
   {
     id: "0",
     title: "Basic Book Keeping",
-    text: `• Maintenance of accurate and up-to-date financial records
-    • Reconciliation of bank statements
-    • Accounts receivable and accounts payable
-    • Assessing a company’s cash flow`,
+    text: `• Maintenance of all up-to-date financial records.
+    • Reconciliation of all bank statements to ensure accuracy.
+    • Management of company's accounts receivable and accounts payable.
+    • Assessing your company’s cash flow to make the best informed financial decisions.`,
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: bookkepingIcon,
     imageUrl: bookkeeping,
@@ -262,7 +262,9 @@ export const benefits = [
   {
     id: "1",
     title: "Tax Planning and Strategy",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: `• Development of tax planning strategies to optimize financial efficiency and  minimize tax exposure.
+    • Develop an accurate cost benefit analysis of these tax treatments.
+    • Gather all information for tax filing season for seamless transition to preparation and filing of filings.`,
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: taxIcon,
     imageUrl: tax,
@@ -271,7 +273,11 @@ export const benefits = [
   {
     id: "2",
     title: "Preparation of Financials",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    text: `• Accurate recording of financial transactions.
+    • Preparation of detailed profit/loss statements.
+    • Compilation of balance sheets to assess financial health.
+    • Monthly generation of informative financial reports for strategic planning.`
+,
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: financeIcon,
     imageUrl: finance,
