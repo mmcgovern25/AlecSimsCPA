@@ -28,6 +28,7 @@ import sas from "./sas-removebg-preview.png";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
+import Boston from "./hero/boston22.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -167,5 +168,6 @@ export {
   bookkeeping,
   financeIcon,
   taxIcon,
-  bookkepingIcon
+  bookkepingIcon,
+  Boston
 };
