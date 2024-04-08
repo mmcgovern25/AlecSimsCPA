@@ -61,7 +61,7 @@ const Hero = () => {
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
         <textarea placeholder="Comments" className="bg-gray-800 text-white px-4 py-2 rounded-md h-24 resize-none md:w-auto lg:w-[20rem]"></textarea>
       </div>
-      <button type="submit" className="ml-15 border-black bg-orange-500 text-white px-4 py-2 rounded-md">Schedule Consultation</button>
+      <button type="submit" className="ml-15 border-blacks bg-orange-500 text-white px-4 py-2 rounded-md">Schedule Consultation</button>
     </form>
   </div>
 </div>

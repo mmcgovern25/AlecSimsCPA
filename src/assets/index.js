@@ -41,6 +41,7 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+import alec from "./collaboration/alec.jpg";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -169,5 +170,6 @@ export {
   financeIcon,
   taxIcon,
   bookkepingIcon,
-  Boston
+  Boston,
+  alec,
 };

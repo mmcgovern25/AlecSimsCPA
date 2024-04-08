@@ -1,40 +1,22 @@
-import { check } from "../assets";
-import { collabContent, collabText } from "../constants";
+import { alec  } from "../assets";
 import Button from "./Button";
-
 
 const Collaboration = () => {
   return (
     <section id="About">
-      <div className="container lg:flex">
+      <div className="container lg:flex justify-between items-start">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
-          </h2>
-
-          <ul className="max-w-[22rem] mb-10 md:mb-14">
-            {collabContent.map((item) => (
-              <li className="mb-3 py-3" key={item.id}>
-                <div className="flex items-center">
-                  <img src={check} width={24} height={24} alt="check" />
-                  <h6 className="body-2 ml-5">{item.title}</h6>
-                </div>
-                {item.text && (
-                  <p className="body-2 mt-3 text-n-4">{item.text}</p>
-                )}
-              </li>
-            ))}
-          </ul>
-
+          <img src={alec} className="hidden lg:block rounded-t-[0.9rem] rounded-b-[0.9rem]" alt="Alec" />
           <Button>Get Started</Button>
         </div>
 
-        <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
-            {collabText}
+        <div className="lg:w-[38rem] mt-4">
+          <h2 className="h2 mb-4 md:mb-8">
+            About Me
+          </h2>
+          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32">
+            This is where Alec tells you all about himself. This is where Alec tells you all about himself. This is where Alec tells you all about himself. This is where Alec tells you all about himself.
           </p>
-
-
         </div>
       </div>
     </section>
