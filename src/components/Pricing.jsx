@@ -14,7 +14,13 @@ const Pricing = () => {
           title="Pay once, use forever"
         />
 
-    <div className="p-4 bg-gray-200 rounded-lg"><Accordian /></div>
+    <div className="p-4 bg-gray-200 rounded-lg border-black">
+      <Accordian title='Question 1 Question 1 Question 1 Question 1 Question 1Question 1 Question 1 Question 1' answer='Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 '/>
+      <Accordian title='Question 1 Question 1 Question 1 Question 1 Question 1Question 1 Question 1 Question 1' answer='Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 '/>
+      <Accordian title='Question 1 Question 1 Question 1 Question 1 Question 1Question 1 Question 1 Question 1' answer='Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 '/>
+      <Accordian title='Question 1 Question 1 Question 1 Question 1 Question 1Question 1 Question 1 Question 1' answer='Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 '/>
+      <Accordian title='Question 1 Question 1 Question 1 Question 1 Question 1Question 1 Question 1 Question 1' answer='Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 '/>
+      </div>
 
       </div>
     </section>
