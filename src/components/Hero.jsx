@@ -53,15 +53,15 @@ const Hero = () => {
 </div>
     <form className="md:flex md:flex-col md:items-end md:mr-15 md:w-auto">
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
-        <input type="text" placeholder="Name" className="bg-gray-800 text-white px-4 py-2 rounded-md md:w-auto lg:w-[20rem]" />
+        <input type="text" placeholder="Name" className="bg-gray-800 text-white px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border focus:border-4 border-gray-300 focus:outline-none focus:border-orange-600" />
       </div>
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
-        <input type="email" placeholder="Email Address" className="bg-gray-800 text-white px-4 py-2 rounded-md md:w-auto lg:w-[20rem]" />
+        <input type="email" placeholder="Email Address" className="bg-gray-800 text-white px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border focus:border-4 border-gray-300 focus:outline-none focus:border-orange-600" />
       </div>
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
-        <textarea placeholder="Comments" className="bg-gray-800 text-white px-4 py-2 rounded-md h-24 resize-none md:w-auto lg:w-[20rem]"></textarea>
+        <textarea placeholder="Comments"  className="bg-gray-800 text-white px-4 py-2 rounded-md h-24 resize-none md:w-auto lg:w-[20rem] border focus:border-4 border-gray-300 focus:outline-none focus:border-orange-600"></textarea>
       </div>
-      <button type="submit" className="ml-15 border-blacks bg-orange-500 text-white px-4 py-2 rounded-md">Schedule Consultation</button>
+      <button type="submit" className="ml-15 border-blacks bg-orange-500 hover:bg-orange-600 focus:outline-none focus:bg-orange-600 text-white px-4 py-2 rounded-md">Schedule Consultation</button>
     </form>
   </div>
 </div>

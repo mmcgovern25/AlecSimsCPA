@@ -19,7 +19,7 @@ const Popup = ({ onClose }) => {
               type="text"
               id="name"
               name="name"
-              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-orange-600"
+              className="w-full px-4 py-2 rounded border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-600"
               required
             />
           </div>
@@ -31,7 +31,7 @@ const Popup = ({ onClose }) => {
               type="email"
               id="email"
               name="email"
-              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-orange-600"
+              className="w-full px-4 py-2 rounded border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-600"
               required
             />
           </div>
@@ -42,7 +42,7 @@ const Popup = ({ onClose }) => {
             <textarea
               id="comments"
               name="comments"
-              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-orange-600"
+              className="w-full px-4 py-2 rounded border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-600"
               rows="4"
               required
             ></textarea>
