@@ -16,7 +16,9 @@ const Pricing = () => {
 
 
 
-<div className="p-4 rounded-lg border-black" style={{ background: 'linear-gradient(135deg, #4F6AC3 0%, #2A4365 100%)' }}>
+<div className="p-4 rounded-lg border-black" style={{ background: 'linear-gradient(135deg, #F6AD55 0%, #DD6B20 100%)' }}>
+
+
       <Accordian  className="border-black" title='Why use a book keeper?' answer='Hiring a bookkeeper for a small business brings a myriad of benefits, ranging from financial organization and compliance to strategic decision-making and client confidence. The expertise and time-saving aspects contribute significantly to the overall efficiency and success of a small business.
 '/>
       <Accordian className="border-black" title='What is the invoicing schedule?' answer='Invoices will be issued on a monthly basis, with the billing cycle concluding on the 15th of each month. You can expect to receive your invoice promptly after this date.
