@@ -6,7 +6,7 @@ const Accordian = ( { title, answer }) => {
   return (
     <div className='py-2 text-black'>
       <button onClick={() => setAccordianOpen(!accordianOpen)} className='flex justify-between w-full'>
-        <span>{title}</span>
+        <span className="w-full sm:w-auto border-black">{title}</span>
         <svg
           className="fill-black-500 shrink-0 ml-8"
           width="16"
@@ -34,7 +34,7 @@ const Accordian = ( { title, answer }) => {
         </svg>
       </button>
 
-      <div className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${accordianOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+      <div className={`grid overflow-hidden transition-all duration-300 ease-in-out text-black text-sm ${accordianOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
         <div className='overflow-hidden'>
             {answer}
         </div>

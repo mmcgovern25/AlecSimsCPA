@@ -67,13 +67,6 @@ export const navigation = [
     title: "FAQs",
     url: "#FAQs",
   },
-
-  {
-    id: "5",
-    title: "Get Started",
-    url: "#getstarted",
-    onlyMobile: true,
-  },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];

@@ -1,16 +1,17 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header";
+import Popup from "./Popup"; // Import the Popup component
 import { useState } from "react";
+import { HamburgerMenu } from "./design/Header"; // Import the HamburgerMenu component
 
 const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false); // State to manage the popup
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -29,6 +30,11 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
+  // Function to toggle the popup
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
@@ -37,7 +43,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <h2 className="logo-text block w-[12rem] xl:mr-8" href="#hero">
-        Alec Simonovitch CPA
+          Alec Simonovitch CPA
         </h2>
 
         <nav
@@ -64,7 +70,7 @@ const Header = () => {
             ))}
           </div>
 
-          <HamburgerMenu />
+          <HamburgerMenu openNavigation={openNavigation} /> {/* Include HamburgerMenu component */}
         </nav>
 
         <Button className="hidden lg:flex" href="#login">
@@ -79,6 +85,16 @@ const Header = () => {
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
+
+      {/* Render the popup when isPopupOpen is true */}
+      {isPopupOpen && (
+  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-black bg-opacity-50">
+    <div className="popup-container"> {/* Make sure popup-container class is applied here */}
+      <Popup onClose={togglePopup} />
+    </div>
+  </div>
+)}
+
     </div>
   );
 };

@@ -135,3 +135,10 @@
 .logo-text {
   font-family: 'Oswald', sans-serif;
 }
+
+.popup-container {
+  position: fixed;
+  top: calc(50% - 200px); /* Adjust according to the height of your popup */
+  left: calc(50% - 200px); /* Adjust according to the width of your popup */
+  z-index: 1000; /* Adjust as needed */
+}
