@@ -40,7 +40,7 @@ const Benefits = () => {
                     width={48}
                     height={48}
                     alt={item.title}
-                    className="bg-gray-500 rounded-full p-1"
+                    className="bg-white rounded-full p-1"
                   />
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
                     Explore more

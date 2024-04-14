@@ -61,7 +61,17 @@ const Hero = () => {
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
         <textarea placeholder="Comments"  className="bg-white text-black px-4 py-2 rounded-md h-24 resize-none md:w-auto lg:w-[20rem] border-4 focus:border-4 border-gray-300 focus:outline-none focus:border-orange-600"></textarea>
       </div>
-      <button type="submit" className="ml-15 border-blacks bg-orange-600 hover:bg-orange-700 focus:outline-none focus:bg-orange-700 text-white px-4 py-2 rounded-md">Schedule Consultation</button>
+      <button
+  type="submit"
+  className="button-theme ml-15 text-white px-4 py-2 rounded-md"
+  style={{
+    backgroundImage: 'linear-gradient(to right, #FFA94D, #FF7E2B)',
+    transition: 'background-color 0.3s ease-in-out',
+  }}
+>
+  Schedule Consultation
+</button>
+
     </form>
   </div>
 </div>

@@ -146,3 +146,12 @@
 .fill-white rect {
   fill: white;
 }
+
+.border-gradient {
+  border-image: linear-gradient(to right, #FFA94D, #FF7E2B);
+  border-image-slice: 1;
+}
+
+.button-theme {
+  @apply active:scale-90 transition-all duration-100 ease-in-out;
+}

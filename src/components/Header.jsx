@@ -73,7 +73,7 @@ const Header = () => {
           <HamburgerMenu openNavigation={openNavigation} /> {/* Include HamburgerMenu component */}
         </nav>
 
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="hidden lg:flex button-theme" href="#login">
           Get Started
         </Button>
 
