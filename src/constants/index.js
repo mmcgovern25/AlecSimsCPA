@@ -1,7 +1,4 @@
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
   chromecast,
   disc02,
   discord,
@@ -54,13 +51,13 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "About",
-    url: "#About",
+    title: "Services",
+    url: "#Services",
   },
   {
     id: "2",
-    title: "Benefits",
-    url: "#Benefits",
+    title: "About",
+    url: "#About",
   },
   {
     id: "3",

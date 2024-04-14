@@ -1,4 +1,3 @@
-import Button from './Button';
 import { Gradient } from './design/Hero';
 import { Boston } from "../assets/";
 import { useRef } from 'react';
@@ -41,32 +40,39 @@ const Hero = () => {
   {/* H2 and small form */}
   <div className="md:flex md:justify-between md:w-full">
     {/* Render h1 for large screens and hide it for small screens */}
-    <h1 className="h1 font-bold text-white mb-4 md:mb-0 md:ml-5 md:mt-[-85px] hidden md:block">
-      Schedule Your Consultation <span className='text-gray-800'>Today.</span>
-    </h1>
+    <div className="relative">
+  <h1 className="h1 text-gray-800 font-bold mb-4 md:mb-0 md:ml-5 md:mt-[-85px] hidden md:block">
+    <div className="bg-white opacity-70 rounded-lg inline-block py-2 px-1">
+      <span className="text-gray-800">Schedule Your Consultation</span> <span className="text-gray-800">Today.</span>
+    </div>
+  </h1>
+</div>
+
+
+
     {/* Render h2 for small screens and hide it for large screens */}
     <div className="relative">
-  <div className="absolute inset-0 bg-white opacity-50"></div>
+  <div className="absolute inset-0 bg-white opacity-70"></div>
   <h3 className="h2 font-bold text-gray-800 mb-4 md:mb-0 ml-5 md:mt-[-85px] block md:hidden relative z-10">
     Schedule Your Consultation <span className='text-gray-800'>Today.</span>
   </h3>
 </div>
     <form className="md:flex md:flex-col md:items-end md:mr-15 md:w-auto">
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
-        <input type="text" placeholder="Name" className="bg-white text-black px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border-4 focus:border-4 border-gray-300 focus:outline-none focus:border-orange-600" />
+        <input type="text" placeholder="Name" className="bg-white text-black px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
-        <input type="email" placeholder="Email Address" className="bg-white text-black px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border-4 focus:border-4 border-gray-300 focus:outline-none focus:border-orange-600" />
+        <input type="email" placeholder="Email Address" className="bg-white text-black px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
-        <textarea placeholder="Comments"  className="bg-white text-black px-4 py-2 rounded-md h-24 resize-none md:w-auto lg:w-[20rem] border-4 focus:border-4 border-gray-300 focus:outline-none focus:border-orange-600"></textarea>
+        <textarea placeholder="Comments"  className="bg-white text-black px-4 py-2 rounded-md h-24 resize-none md:w-auto lg:w-[20rem] border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-500"></textarea>
       </div>
-      <button
-  type="submit"
-  className="button-theme ml-15 text-white px-4 py-2 rounded-md"
-  style={{
-    backgroundImage: 'linear-gradient(to right, #FFA94D, #FF7E2B)',
-    transition: 'background-color 0.3s ease-in-out',
+          <button
+      type="submit"
+      className="button-theme ml-15 text-white px-4 py-2 rounded-md border border-white focus:border-2"
+      style={{
+        backgroundImage: 'linear-gradient(to right, #FFA94D, #FF7E2B)',
+        transition: 'background-color 0.3s ease-in-out  ',
   }}
 >
   Schedule Consultation
@@ -76,14 +82,14 @@ const Hero = () => {
   </div>
 </div>
 
-
-
-
     </div>
     <Gradient />
   </div>
 </div>
-        <CompanyLogos className='hidden relative z-10 mt-20 lg:block' />
+        <div className='relative z-10 mt-20 lg:mt-8 lg:block'>
+          <CompanyLogos />
+          <div className="mb-20 lg:mt-15 lg:mb-20" /> {/* Adding buffer space */}
+        </div>
     </div>
 
     </section>

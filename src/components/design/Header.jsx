@@ -1,4 +1,4 @@
-import { background } from "../../assets";
+
 
 export const Rings = () => {
   return (
@@ -34,10 +34,7 @@ export const HamburgerMenu = () => {
       <div className="absolute inset-0 opacity-[.03]">
 
       </div>
-
       <Rings />
-
-
     </div>
   );
 };

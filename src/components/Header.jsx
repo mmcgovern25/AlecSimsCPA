@@ -22,12 +22,26 @@ const Header = () => {
       disablePageScroll();
     }
   };
-
   const handleClick = () => {
     if (!openNavigation) return;
 
     enablePageScroll();
     setOpenNavigation(false);
+
+    // Get the hash from the clicked link
+    const hash = window.location.hash;
+
+    // Set the offset for each section to make the title fully visible
+    let offset = 100; // Adjust this value as needed
+
+    // Scroll to the target element with offset adjustment
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - offset,
+        behavior: 'smooth',
+      });
+    }
   };
 
   // Function to toggle the popup

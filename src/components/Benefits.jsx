@@ -7,14 +7,15 @@ import Button from './Button';
 
 const Benefits = () => {
   return (
-    <section id="Benefits">
-      <div className="container relative z-2">
+    <section>
+      <div className="container relative z-2" id="Services">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
           title="Here's what you can expect when working with me"
+
         />
 
-        <div className="flex flex-wrap gap-3 mb-10">
+        <div className="flex flex-wrap gap-3 mb-10" >
           {benefits.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[20rem] lg:max-w-[22rem]"
@@ -73,7 +74,7 @@ const Benefits = () => {
             </div>
           ))}
         </div>
-        <Button>Get Started</Button>
+        <Button className='mb-40'>Get Started</Button>
       </div>
     </section>
   );
