@@ -142,3 +142,7 @@
   left: calc(50% - 200px); /* Adjust according to the width of your popup */
   z-index: 1000; /* Adjust as needed */
 }
+
+.fill-white rect {
+  fill: white;
+}
