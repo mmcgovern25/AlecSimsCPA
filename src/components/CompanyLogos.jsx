@@ -1,12 +1,12 @@
 import { companyLogos } from "../constants";
-
+import Heading from "./Heading";
 
 const CompanyLogos = ({ className }) => {
   return (
-    <div className={className}>
-      <h5 className="tagline mb-6 text-center text-n-1/50">
-        A BRIEF HISTORY OF MY PROFESSIONAL CAREER
-      </h5>
+    <div className={`mt-20 ${className}`}> {/* Adjust the margin top as needed */}
+      <Heading className="tagline mb-6 mt-32 text-center text-n-1/50"
+      tag="A BRIEF HISTORY OF MY PROFESSIONAL CAREER" />
+
       <div className='logos'>
         <ul className="flex logo_items scroller__inner">
           {companyLogos.map((logo, index) => (
@@ -18,7 +18,7 @@ const CompanyLogos = ({ className }) => {
             </li>
           ))}
         </ul>
-        </div>
+      </div>
     </div>
   );
 };

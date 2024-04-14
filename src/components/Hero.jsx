@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import CompanyLogos from './CompanyLogos';
 
 
+
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (
@@ -86,9 +87,9 @@ const Hero = () => {
     <Gradient />
   </div>
 </div>
-        <div className='relative z-10 mt-20 lg:mt-8 lg:block'>
+        <div className='relative z-10 mt-20 lg:mt-4 lg:block'>
           <CompanyLogos />
-          <div className="mb-20 lg:mt-15 lg:mb-20" /> {/* Adding buffer space */}
+          <div className="mb-12 lg:mt-4 lg:mb-12" /> {/* Adding buffer space */}
         </div>
     </div>
 

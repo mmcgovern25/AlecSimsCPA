@@ -1,12 +1,12 @@
 import Accordian from "./Accordian";
 import Heading from "./Heading";
-
+import Section from "./Section";
 
 
 
 const Pricing = () => {
   return (
-    <section className="overflow-hidden" id="FAQs">
+    <Section className="overflow-hidden" id="FAQs">
 
       <div className="container relative z-2 flex justify-center items-center flex-col"> {/* Added flex and centering classes */}
 <Heading
@@ -34,7 +34,7 @@ const Pricing = () => {
       </div>
 
       </div>
-    </section>
+    </Section>
   )
 }
 

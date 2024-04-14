@@ -1,9 +1,10 @@
 import { alec } from "../assets";
 import Button from "./Button";
+import Section from "./Section";
 
 const Collaboration = () => {
   return (
-    <section id="About">
+    <Section id="About">
       <div className="container lg:flex justify-between items-start">
         {/* Text section */}
         <div className="lg:w-[38rem] mt-4">
@@ -18,11 +19,11 @@ const Collaboration = () => {
 
         {/* Image section */}
         <div className="max-w-[25rem] lg:flex lg:flex-col">
-          <img src={alec} className="lg:block rounded-t-[0.9rem] rounded-b-[0.9rem] mt-16 mb-32" alt="Alec" />
-          <Button className='lg:hidden mb-40'>Get Started</Button>
+          <img src={alec} className="lg:block rounded-t-[0.9rem] rounded-b-[0.9rem] mt-16 mb-8" alt="Alec" />
+          <Button className='lg:hidden'>Get Started</Button>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

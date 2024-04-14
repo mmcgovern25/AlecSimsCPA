@@ -4,11 +4,12 @@ import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import Button from './Button';
+import Section from "./Section";
 
 const Benefits = () => {
   return (
-    <section>
-      <div className="container relative z-2" id="Services">
+    <Section id="Services">
+      <div className="container relative z-2" >
         <Heading
           className="md:max-w-md lg:max-w-2xl"
           title="Here's what you can expect when working with me"
@@ -74,9 +75,9 @@ const Benefits = () => {
             </div>
           ))}
         </div>
-        <Button className='mb-40'>Get Started</Button>
+        <Button className=''>Get Started</Button>
       </div>
-    </section>
+    </Section>
   );
 };
 
