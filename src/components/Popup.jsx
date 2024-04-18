@@ -1,9 +1,33 @@
-const Popup = ({ onClose }) => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-  };
+import React from 'react';
+import Swal from 'sweetalert2';
 
+const Popup = ({ onClose }) => {
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "c8bfb09d-ae1d-44b9-a11c-d19758381fac");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire("Success!", "Congratulations, your inquiry has been succesfully submitted! Alec will be in touch with you soon via Email.", "success");
+      console.log("Success", res),
+      onClose();
+    }
+  };
   return (
     <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center z-50 bg-black bg-opacity-30">
       <div
@@ -33,6 +57,16 @@ const Popup = ({ onClose }) => {
               className="text-black bg-white w-full px-4 py-2 rounded border focus:border-2 border-gray-300 focus:outline-none focus:border-white"
               required
             />
+          </div>
+          <div className="mb-4">
+              <label htmlFor="phone" className="block mb-2 font-bold text-gradient">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                className="text-black bg-white w-full px-4 py-2 rounded border focus:border-2 border-gray-300 focus:outline-none focus:border-white"
+                required
+              />
           </div>
           <div className="mb-4">
             <label htmlFor="comments" className="block mb-2 font-bold text-gradient">Comments</label>

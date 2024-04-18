@@ -6,6 +6,7 @@ import Pricing from './components/Pricing';
 import Collaboration from './components/Collaboration';
 import Footer from './components/Footer';
 
+
 const App = () => {
 
   return (
