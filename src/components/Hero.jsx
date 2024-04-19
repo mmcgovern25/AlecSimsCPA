@@ -66,6 +66,13 @@ const Hero = () => {
         <input type="email" placeholder="Email Address" className="bg-white text-black px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-4 ml-15 md:mb-2 mx-auto">
+      <div className="mb-4 md:mb-2 mx-auto">
+      <input
+        type="tel"
+        placeholder="Phone Number" className="bg-white text-black px-4 py-2 rounded-md md:w-auto lg:w-[20rem] border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-500" />
+      </div>
+    </div>
+      <div className="mb-4 ml-15 md:mb-2 mx-auto">
         <textarea placeholder="Comments"  className="bg-white text-black px-4 py-2 rounded-md h-24 resize-none md:w-auto lg:w-[20rem] border focus:border-2 border-gray-300 focus:outline-none focus:border-orange-500"></textarea>
       </div>
           <button
