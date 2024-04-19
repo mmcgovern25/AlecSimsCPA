@@ -159,12 +159,12 @@
 
 .scroller {
   max-width: 600px;
-  border: solid orange 5px;
+  border: solid #FF7E2B 5px;
 }
 
 @media screen and (min-width: 768px) {
   .scroller {
-    max-width: 800px; /* Adjust this value as needed for larger screens */
+    max-width: 900px; /* Adjust this value as needed for larger screens */
   }
 }
 
