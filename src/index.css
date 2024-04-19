@@ -159,8 +159,10 @@
 
 .scroller {
   max-width: 600px;
-  border: solid #FF7E2B 5px;
+  border: 5px solid;
+  border-image: linear-gradient(to right, #FFA94D, #FF7E2B) 1;
 }
+
 
 @media screen and (min-width: 768px) {
   .scroller {
