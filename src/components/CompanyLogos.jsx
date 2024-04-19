@@ -2,11 +2,11 @@ import './LogosJS';
 
 import Heading from "./Heading";
 
-import bryant from "../assets/bryant-resized.png";
-import pwc from "../assets/pwc5-removebg-preview-resized.png";
+import bryant from "../assets/bryant-resized-removebg-preview.png";
+import pwc from "../assets/pwc5-removebg-preview-resized-removebg-preview.png";
 import bluebird from "../assets/bbb-removebg-preview-resized.png";
 import cpa from "../assets/cpa-removebg-preview-resized.png";
-import sas from "../assets/sas-removebg-preview-resized.png";
+import sas from "../assets/sas-removebg-preview-resized-removebg-preview.png";
 
 
 

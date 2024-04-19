@@ -55,17 +55,22 @@ const Header = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <h2 className="logo-text block w-[12rem] xl:mr-8" href="#hero">
-          Alec Simonovitch CPA
+      <div className="flex items-center px-2 lg:px-7.5 xl:px-10 max-lg:py-4">
+        {/* Show the image only on small screens */}
+      {/* Show the image only on small screens */}
+<img src="./src/assets/SimsIcon__2_-removebg-preview.png" className="logo-text block w-[5rem] mt-0 lg:mt-2 mb-0 lg:mb-2 lg:hidden" alt='Alec Simonovitch' href="#hero" />
+
+        {/* Show the h2 only on large screens */}
+        <h2 className="logo-text w-[12rem] hidden lg:block" href="#hero">
+          Alec Simonovitch, CPA, MPAC
         </h2>
 
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent lg:justify-start`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row lg:ml-6">
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -102,15 +107,14 @@ const Header = () => {
 
       {/* Render the popup when isPopupOpen is true */}
       {isPopupOpen && (
-  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-black bg-opacity-50">
-    <div className="popup-container"> {/* Make sure popup-container class is applied here */}
-      <Popup onClose={togglePopup} />
-    </div>
-  </div>
-)}
-
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-black bg-opacity-50">
+          <div className="popup-container"> {/* Make sure popup-container class is applied here */}
+            <Popup onClose={togglePopup} />
+          </div>
+        </div>
+      )}
     </div>
   );
-};
+      };
 
 export default Header;

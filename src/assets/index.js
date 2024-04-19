@@ -20,7 +20,7 @@ import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
-import bryant from "./bryant-resized.png";
+import bryant from "./bryant-resized-removebg-preview.png";
 import pwc from "./pwc5-removebg-preview-resized.png";
 import bluebird from "./bbb-removebg-preview-resized.png";
 import cpa from "./cpa-removebg-preview-resized.png";
