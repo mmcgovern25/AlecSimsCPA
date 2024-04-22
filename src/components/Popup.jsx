@@ -5,6 +5,7 @@ const Popup = ({ onClose }) => {
 
 
   const handleSubmit = async (event) => {
+    console.log("Submit button clicked");
     event.preventDefault();
     const formData = new FormData(event.target);
 
