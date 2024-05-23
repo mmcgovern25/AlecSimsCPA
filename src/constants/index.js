@@ -1,6 +1,5 @@
 import {
-  chromecast,
-  disc02,
+  linkedin,
   discord,
   discordBlack,
   facebook,
@@ -17,15 +16,13 @@ import {
   plusSquare,
   protopie,
   raindrop,
-  recording01,
-  recording03,
   roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
   searchMd,
   slack,
-  sliders04,
+
   telegram,
   twitter,
   bryant,
@@ -72,19 +69,8 @@ export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [bryant, pwc, bluebird, sas, cpa ];
 
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
-];
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
+
 
 export const roadmap = [
   {
@@ -278,32 +264,8 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "LinkedIn",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/in/alec-simonovitch-cpa-mpac-b42731129/",
   },
 ];
