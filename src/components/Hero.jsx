@@ -93,7 +93,7 @@ const Hero = ({ onClose }) => {
         </div>
         <div className='relative z-10 mt-20 lg:mt-4 lg:block'>
           <CompanyLogos />
-          <div className="mb-12 lg:mt-4 lg:mb-12" /> {/* Adding buffer space */}
+          <div className="mb-12 lg:mt-4 lg:mb-12" />
         </div>
       </div>
     </section>
