@@ -3,6 +3,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { navigation } from "../constants";
 import Button from "./Button";
+import  { littleScreenCon } from "../assets";
 import MenuSvg from "../assets/svg/MenuSvg";
 import Popup from "./Popup"; // Import the Popup component
 import { useState } from "react";
@@ -58,7 +59,7 @@ const Header = () => {
       <div className="flex items-center px-2 lg:px-7.5 xl:px-10 max-lg:py-4">
         {/* Show the image only on small screens */}
       {/* Show the image only on small screens */}
-<img src="./src/assets/SimsIcon__2_-removebg-preview.png" className="logo-text block w-[5rem] mt-0 lg:mt-2 mb-0 lg:mb-2 lg:hidden" alt='Alec Simonovitch' href="#hero" />
+<img src={littleScreenCon} className="logo-text block w-[5rem] mt-0 lg:mt-2 mb-0 lg:mb-2 lg:hidden" alt='Alec Simonovitch' href="#hero" />
 
         {/* Show the h2 only on large screens */}
         <h2 className="logo-text w-[12rem] hidden lg:block" href="#hero">

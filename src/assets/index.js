@@ -29,6 +29,7 @@ import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import Boston from "./hero/boston22.jpg";
 import heroBackground from "./hero/hero-background.jpg";
+import littleScreenCon from "./lilcon.png"
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -93,6 +94,7 @@ import linkedin from "./socials/linkedin.png";
 export {
   brainwave,
   linkedin,
+  littleScreenCon,
   check,
   check2,
   loading1,

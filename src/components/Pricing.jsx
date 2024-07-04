@@ -11,7 +11,7 @@ const Pricing = () => {
       <div className="container relative z-2 flex justify-center items-center flex-col"> {/* Added flex and centering classes */}
 <Heading
           tag="YOU MAY STILL HAVE SOME QUESTIONS"
-          title="Let's go gver them, together!"
+          title="Let's go over them, together!"
         />
 
 
